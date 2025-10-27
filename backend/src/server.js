@@ -5,9 +5,11 @@ import authRoutes from './routes/auth.route.js';
 import messageRoutes from './routes/message.route.js';
 import path from 'path';
 import {connectDB} from './lib/db.js';
+import cors  from 'cors';
 import {ENV} from "./lib/env.js";
 
 const app = express();
+app.use(cors({origin: ENV.CLIENT_URL, credentials: true}));
 const __driname = path.resolve();
 console.log(ENV.PORT);
 const PORT = ENV.PORT || 3333;
