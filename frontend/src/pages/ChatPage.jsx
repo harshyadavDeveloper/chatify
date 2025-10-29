@@ -1,5 +1,4 @@
 import { useChatStore } from "../store/useChatStore";
-
 import BorderAnimatedContainer from "../components/BorderAnimatedContainer";
 import ProfileHeader from "../components/ProfileHeader";
 import ActiveTabSwitch from "../components/ActiveTabSwitch";
