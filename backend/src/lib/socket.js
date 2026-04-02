@@ -9,9 +9,9 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: [ENV.CLIENT_URL, ENV.VITE_API_BASE_URL],
+    origin: [ENV.CLIENT_URL, "https://chatify-4heo.onrender.com"],
     credentials: true,
-  },    
+  },
 });
 
 // apply authentication middleware to all socket connections
